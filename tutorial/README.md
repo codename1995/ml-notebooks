@@ -27,8 +27,18 @@ The first time to setup your environment, run below script:
 ```bash
 module purge # unload all modules
 module load 2022
-module load Anaconda3/2022.05 # version 4.12.0
+module load 2023
+module load Anaconda3/2023.07-2
 conda init bash
+```
+
+Please also check the [Snellius official website](https://servicedesk.surf.nl/wiki/display/WIKI/Software+policy+Snellius#SoftwarepolicySnellius-UseofAnacondaandMinicondaenvironmentsonSnellius) for up-to-date version.
+
+It is also recommended to input these commands to the `~/.bashrc` script. Then, these modules are automatically loaded each time you create a new terminal.
+```bash
+module load 2022
+module load 2023
+module load Anaconda3/2023.07-2
 ```
 
 After that, the basic virtualenv from conda can be created. See below e.g.:
